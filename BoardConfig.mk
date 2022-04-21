@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/renoir
+DEVICE_PATH := device/$(PRODUCT_BRAND)/$(TARGET_DEVICE)
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -38,7 +38,7 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := renoir
+TARGET_OTA_ASSERT_DEVICE := I2018
 
 # A/B
 AB_OTA_UPDATER := true
